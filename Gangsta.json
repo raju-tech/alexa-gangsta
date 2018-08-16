@@ -1,0 +1,284 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my telstra",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "rechargePrepaidNumber",
+                    "slots": [],
+                    "samples": [
+                        "can you please recharge my prepaid number",
+                        "can you please recharge my mobile number",
+                        "mobile number recharge",
+                        "prepaid number recharge",
+                        "prepaid recharge",
+                        "mobile recharge",
+                        "recharge mobile number",
+                        "recharge mobile",
+                        "recharge my prepaid number",
+                        "recharge prepaid number",
+                        "I would like to recharge my prepaid number"
+                    ]
+                },
+                {
+                    "name": "GetMobileNumber",
+                    "slots": [
+                        {
+                            "name": "mobileNumber",
+                            "type": "AMAZON.PhoneNumber"
+                        }
+                    ],
+                    "samples": [
+                        "number is {mobileNumber}",
+                        "{mobileNumber}"
+                    ]
+                },
+                {
+                    "name": "plansForGivenMobileNumber",
+                    "slots": [],
+                    "samples": [
+                        "interested",
+                        "no problem",
+                        "no worries",
+                        "ok",
+                        "go",
+                        "gohead",
+                        "sure please",
+                        "yes please",
+                        "yep",
+                        "yes",
+                        "sure"
+                    ]
+                },
+                {
+                    "name": "nextPlanPlease",
+                    "slots": [],
+                    "samples": [
+                        "next plan please",
+                        "go next",
+                        "next plan",
+                        "next"
+                    ]
+                },
+                {
+                    "name": "prevPlanPlease",
+                    "slots": [],
+                    "samples": [
+                        "previous plan please",
+                        "previous plan",
+                        "previous"
+                    ]
+                },
+                {
+                    "name": "gotoPlan",
+                    "slots": [
+                        {
+                            "name": "planNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "goto plan {planNumber} please",
+                        "say plan {planNumber}",
+                        "move to plan {planNumber}",
+                        "goto plan {planNumber}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "nope",
+                        "no interest",
+                        "not interested",
+                        "not sure"
+                    ]
+                },
+                {
+                    "name": "chooseCurrentPlan",
+                    "slots": [
+                        {
+                            "name": "planNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "select this please",
+                        "select this plan please",
+                        "choose this please",
+                        "choose this plan please",
+                        "confirm this plan please",
+                        "confirm this please",
+                        "confirm this",
+                        "select this",
+                        "choose this",
+                        "choose this plan",
+                        "select this plan",
+                        "confirm this plan",
+                        "plan {planNumber}",
+                        "choose plan {planNumber}",
+                        "select plan {planNumber}"
+                    ]
+                },
+                {
+                    "name": "makePayment",
+                    "slots": [
+                        {
+                            "name": "pin",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "pin is {pin}",
+                        "{pin}"
+                    ]
+                },
+                {
+                    "name": "prePayment",
+                    "slots": [
+                        {
+                            "name": "optionValue",
+                            "type": "YES_NO_SLOT"
+                        }
+                    ],
+                    "samples": [
+                        "ok {optionValue}",
+                        "oh {optionValue}",
+                        "saved card {optionValue}",
+                        "{optionValue} saved card"
+                    ]
+                },
+                {
+                    "name": "repeatPlan",
+                    "slots": [],
+                    "samples": [
+                        "sorry",
+                        "once again say this plan",
+                        "once again",
+                        "one more time",
+                        "again",
+                        "repeat current plan",
+                        "come again",
+                        "pardon",
+                        "repeat plan",
+                        "repeat"
+                    ]
+                },
+                {
+                    "name": "listSavedCard",
+                    "slots": [],
+                    "samples": [
+                        "set default card",
+                        "change saved card",
+                        "change saved card details",
+                        "change default card"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "suburb",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Chennai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HAWTHORN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Melbourne"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sydney"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "property_type",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Duplex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Town House"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Studio Apartment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Villa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apartment"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "YES_NO_SLOT",
+                    "values": [
+                        {
+                            "id": "TRUE",
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "yep",
+                                    "yeah",
+                                    "I do",
+                                    "yes please",
+                                    "you know it"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FALSE",
+                            "name": {
+                                "value": "no",
+                                "synonyms": [
+                                    "I dont have",
+                                    "nope",
+                                    "I do not",
+                                    "no thank you"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
